@@ -32,6 +32,21 @@
             <h3 class="text-center">Route & Maps</h3>
             <div id="canvas" style="width: auto;display: none;"></div>
             <div id="map" class="map map-home" style="height:500px"></div>
+            <small>
+              Ket:<br/>
+           
+                <div class="d-flex justify-content-between">
+                    <span>
+                        <span class="badge-danger" style="background:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> : Jalur Terbaik
+                    </span>
+                    <span>
+                        <span class="badge-danger" style="background:red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> : Jalur Terburuk
+                    </span>
+                    <span>
+                        <span class="badge-danger" style="background:black;opacity: 0.3;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> : Iterasi Pencarian Jalur
+                    </span>
+                </div>
+            </small>
           </div>
         </div>
       </div>
@@ -156,6 +171,14 @@
       smoothFactor: 1
     });
     secondPolyline.addTo(mymap);
+
+    var trial = new L.Polyline(pointList, {
+      color: 'black',
+      weight: 3,
+      opacity: 0.5,
+      smoothFactor: 1
+    });
+    trial.addTo(mymap);
 
   </script>
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
