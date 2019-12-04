@@ -81,7 +81,7 @@ function setup() {
   for (var i = 0; i < popTotal; i++) {
     population[i] = new DNA(totalCities);
     addToLog((i + 1) + ". " + population[i].order);
-    print(population[i].order);
+    //print(population[i].order);
   }
   addToLog("\n\n");
 
