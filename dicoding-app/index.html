@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+    document.onreadystatechange = function () {
+        if (document.readyState == "interactive") {
+            var hash = window.location.hash;
+            var params = hash.split('&')
+            var page_url = params[0].split("=")[1];
+            var type = params[1].split("=")[1];
+
+            var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = type + "_" + page_url; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+
+            console.log(disqus_config);
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://movie-app-dicoding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+           
+
+        }
+    }
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+      
+</body>
+</html>
