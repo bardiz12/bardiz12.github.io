@@ -1,0 +1,13 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$da1815f25f79c7ee38f77a5e0f9c715c3345a8ba.json": {
+            "sha1": "da1815f25f79c7ee38f77a5e0f9c715c3345a8ba"
+        }
+    },
+    "metadata-url": "/composer/swoole-illuminate/p2/%package%.json",
+    "available-packages": [
+        "illuminate/database",
+        "illuminate/queue"
+    ]
+}

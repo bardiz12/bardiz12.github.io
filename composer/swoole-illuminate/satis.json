@@ -1,0 +1,15 @@
+{
+    "name": "bardiz12/swoole-illuminate",
+    "homepage": "https://bardiz12.github.io/composer/swoole-illuminate",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bardiz12/illuminate-queue"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bardiz12/illuminate-database"
+        }
+    ],
+    "require-all": true
+}
